@@ -14,6 +14,9 @@ const HeaderComponent = ({ header }: { header: Header }) => {
         <Link href="/">
           <Image src="/logo-white.svg" alt="logo" width={170} height={50} />
         </Link>
+
+        <HeaderNav header={header} />
+        <HeaderMobileNav header={header} />
       </Gutter>
     </nav>
   )
